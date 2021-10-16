@@ -1,0 +1,37 @@
+.form {
+  display: inline-block;
+  margin-left: 93px;
+}
+.form-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 8px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--text-white-color);
+  background: transparent;
+  transition: border-color 250ms var(--timing-function);
+}
+.form-input::placeholder {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.form .form-input:focus {
+  border-color: var(--bg-prime-color);
+}
+.sub_btn {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 29px;
+}
+.icon_telegram {
+  display: inline-block;
+  margin-left: 9px;
+}

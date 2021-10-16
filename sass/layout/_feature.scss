@@ -1,0 +1,29 @@
+.feature-title {
+  margin-bottom: 10px;
+  line-height: 1.14;
+}
+.feature-list {
+  display: flex;
+  line-height: 1.71;
+}
+.feature-item {
+  width: 270px;
+}
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-text {
+  color: var(--text-prime-color);
+}
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: var(--bg-second-color);
+}

@@ -1,0 +1,38 @@
+.footer {
+  background-color: var(--bg-hero-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-indent {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+.logo-footer {
+  color: var(--text-white-color);
+}
+.connect-footer {
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.connect-footer-adress:not(:last-child) {
+  color: var(--text-white-color);
+  margin-bottom: 9px;
+}
+.connect-footer-mail {
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms var(--timing-function);
+}
+.connect-footer-mail:hover,
+.connect-footer-mail:focus {
+  color: var(--accent-color);
+}
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
+.coordinates {
+  flex-grow: 1;
+}

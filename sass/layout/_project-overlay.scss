@@ -1,0 +1,26 @@
+.projekt-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.projekt-overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--text-white-color);
+  padding: 63px 24px;
+
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-function);
+}
+.projekt-item:hover .projekt-overlay-text,
+.projekt-item:focus .projekt-overlay-text,
+.projekt-link:hover .projekt-overlay-text,
+.projekt-link:focus .projekt-overlay-text {
+  transform: translateY(0%);
+}

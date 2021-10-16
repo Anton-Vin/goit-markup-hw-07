@@ -1,0 +1,40 @@
+.envelope {
+  display: inline-block;
+  align-items: center;
+  margin-right: 10px;
+  fill: var(--text-prime-color);
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.connect-header {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.connect-header-link {
+  display: inline-flex;
+  align-items: center;
+
+  list-style: none;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.17;
+
+  color: var(--text-prime-color);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color 250ms var(--timing-function);
+}
+.connect-header-link:hover .envelope,
+.connect-header-link:focus .envelope,
+.connect-header-link:hover,
+.connect-header-link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.connect-header-item:not(:last-child) {
+  margin-right: 50px;
+}
