@@ -110,7 +110,7 @@ img {
 .header {
   border-bottom: 1px solid #ececec;
 }
-.logo-header {
+.logo-black {
   margin-right: 93px;
   color: #000000;
 }
@@ -297,6 +297,7 @@ img {
 /* ------------------------services provided style------------------ */
 .service {
   padding-top: 0;
+  padding-bottom: 94px;
 }
 
 .service-title {

@@ -111,7 +111,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.logo-header {
+.logo_black {
   margin-right: 93px;
   color: #000000;
 }
@@ -122,7 +122,7 @@ body {
   align-items: center;
 }
 
-.header-nav {
+.navigation {
   display: flex;
   align-items: center;
 }
@@ -132,7 +132,7 @@ body {
   align-items: center;
 }
 
-.site-nav-link {
+.site-nav__link {
   position: relative;
   display: block;
   color: var(--text-title-color);
@@ -144,21 +144,21 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.site-nav-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus,
-.site-nav-link:active {
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-nav__link:active {
   color: var(--accent-color);
 }
 
-.site-nav-link.current {
+.site-nav__link.current {
   color: var(--accent-color);
 }
 
-.site-nav-link::after {
+.site-nav__link::after {
   content: '';
   position: absolute;
   left: 0;
@@ -171,12 +171,12 @@ body {
   opacity: 0;
 }
 
-.site-nav-link.current::after {
+.site-nav__link.current::after {
   opacity: 1;
   width: 100%;
 }
 
-.envelope {
+.contacts__icon {
   display: inline-block;
   align-items: center;
   margin-right: 10px;
@@ -184,13 +184,13 @@ body {
   transition: fill 250ms var(--timing-function);
 }
 
-.connect-header {
+.contacts {
   display: flex;
-  align-items: center;
-  margin-left: auto;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
-.connect-header-link {
+.contacts__link {
   display: inline-flex;
   align-items: center;
   list-style: none;
@@ -204,15 +204,15 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.connect-header-link:hover .envelope,
-.connect-header-link:focus .envelope,
-.connect-header-link:hover,
-.connect-header-link:focus {
+.contacts__link:hover .envelope,
+.contacts__link:focus .envelope,
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.connect-header-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -230,7 +230,7 @@ body {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   color: var(--text-white-color);
   font-weight: 900;
@@ -294,6 +294,7 @@ body {
 
 .service {
   padding-top: 0;
+  padding-bottom: 94px;
 }
 
 .service-title {

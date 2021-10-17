@@ -1,4 +1,4 @@
-.envelope {
+.contacts__icon {
   display: inline-block;
   align-items: center;
   margin-right: 10px;
@@ -7,12 +7,12 @@
   transition: fill 250ms var(--timing-function);
 }
 
-.connect-header {
+.contacts {
   display: flex;
-  align-items: center;
-  margin-left: auto;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
-.connect-header-link {
+.contacts__link {
   display: inline-flex;
   align-items: center;
 
@@ -28,13 +28,13 @@
 
   transition: color 250ms var(--timing-function);
 }
-.connect-header-link:hover .envelope,
-.connect-header-link:focus .envelope,
-.connect-header-link:hover,
-.connect-header-link:focus {
+.contacts__link:hover .envelope,
+.contacts__link:focus .envelope,
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
-.connect-header-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
