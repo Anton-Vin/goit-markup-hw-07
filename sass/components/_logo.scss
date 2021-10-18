@@ -5,4 +5,11 @@
   font-weight: 700;
   line-height: 1.17;
   text-decoration: none;
+  .logo_black {
+    margin-right: 93px;
+    color: #000000;
+  }
+  .logo_white {
+    color: var(--text-white-color);
+  }
 }

@@ -3,7 +3,7 @@
   padding-bottom: 94px;
 }
 
-.service-title {
+.container__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
@@ -13,13 +13,13 @@
 .service-list {
   display: flex;
 }
-.service-item:not(:last-child) {
+.service-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.service-item {
+.service-list__item {
   position: relative;
 }
-.service-overlay {
+.service-list__overlay {
   display: flex;
   position: absolute;
   bottom: 0;

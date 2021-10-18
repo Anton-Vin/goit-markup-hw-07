@@ -1,13 +1,12 @@
-.social-links-list {
+.socials {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
 }
-.social-links-item:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-network {
+.socials__networks {
   display: flex;
   align-items: center;
   width: 44px;
@@ -20,8 +19,12 @@
   transition: background-color 250ms var(--timing-function),
     fill 250ms var(--timing-function);
 }
-.social-network:hover,
-.social-network:focus {
+.socials__networks:hover,
+.socials__networks:focus {
   background-color: var(--accent-color);
   fill: var(--text-white-color);
+}
+.socials__networks_white_fill {
+  fill: var(--text-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }

@@ -1,22 +1,22 @@
-.feature-title {
-  margin-bottom: 10px;
-  line-height: 1.14;
-}
 .feature-list {
   display: flex;
   line-height: 1.71;
 }
-.feature-item {
+.feature-list__title {
+  margin-bottom: 10px;
+  line-height: 1.14;
+}
+.ffeature-list__item {
   width: 270px;
 }
-.feature-item:not(:last-child) {
+.feature-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.feature-text {
+.feature-list__text {
   color: var(--text-prime-color);
 }
-.feature-icon {
+.feature-list__icon {
   display: flex;
   justify-content: center;
   margin-left: auto;

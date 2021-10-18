@@ -1,20 +1,20 @@
-.clients-title {
+.container__title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   text-transform: none;
-  margin-bottom: 50px;
 }
 .clients-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
 }
-.clients-item {
+.clients-list__item {
   flex-basis: calc(100% / 6 - 30px);
   margin-left: 30px;
 }
-.clients-links {
+.clients-list__links {
   display: flex;
   align-items: center;
   width: 170px;
@@ -28,8 +28,8 @@
   transition: border-color 250ms var(--timing-function),
     fill 250ms var(--timing-function);
 }
-.clients-links:hover,
-.clients-links:focus {
+.clients-list__links:hover,
+.clients-list__links:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
