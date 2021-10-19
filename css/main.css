@@ -77,6 +77,13 @@ body {
   font-weight: 700;
 }
 
+.title__join {
+  display: block;
+  color: var(--text-white-color);
+  margin-bottom: 20px;
+  line-height: 1.17;
+}
+
 .btn {
   font-family: inherit;
   cursor: pointer;
@@ -84,6 +91,25 @@ body {
   margin: 0;
   border: 0;
   border-radius: 0;
+}
+
+.button {
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  transition: background-color 250ms var(--timing-function);
+}
+
+.button:hover, .button:focus {
+  background-color: #188ce8;
 }
 
 .logo {
@@ -109,6 +135,14 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
+}
+
+.container .container__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: none;
 }
 
 .section {
@@ -174,7 +208,13 @@ body {
   width: 100%;
 }
 
-.contacts__icon {
+.contacts {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.contacts .contacts__icon {
   display: inline-block;
   align-items: center;
   margin-right: 10px;
@@ -182,10 +222,8 @@ body {
   transition: fill 250ms var(--timing-function);
 }
 
-.contacts {
-  display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
+.contacts .contacts__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contacts__link {
@@ -203,15 +241,9 @@ body {
 }
 
 .contacts__link:hover .contacts__icon,
-.contacts__link:focus .contacts__icon,
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:focus .contacts__icon, .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-}
-
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .hero {
@@ -228,33 +260,13 @@ body {
   background-size: cover;
 }
 
-.hero__title {
+.hero .hero__title {
   margin-bottom: 30px;
   color: var(--text-white-color);
   font-weight: 900;
   font-size: 44px;
   letter-spacing: 0.06em;
   line-height: 1.37;
-}
-
-.button {
-  width: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: var(--text-white-color);
-  background-color: var(--accent-color);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  transition: background-color 250ms var(--timing-function);
-}
-
-.button:hover,
-.button:focus {
-  background-color: #188ce8;
 }
 
 .feature-list {
@@ -295,14 +307,6 @@ body {
   padding-bottom: 94px;
 }
 
-.container__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  text-transform: none;
-}
-
 .service-list {
   display: flex;
 }
@@ -332,14 +336,6 @@ body {
 
 .section_bg_grey {
   background-color: var(--bg-second-color);
-}
-
-.container__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  text-transform: none;
 }
 
 .team-list {
@@ -380,8 +376,7 @@ body {
   transition: box-shadow 250ms var(--timing-function);
 }
 
-.team-list__shadow:hover,
-.team-list__shadow:focus {
+.team-list__shadow:hover, .team-list__shadow:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -406,8 +401,7 @@ body {
   transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
-.socials__networks:hover,
-.socials__networks:focus {
+.socials__networks:hover, .socials__networks:focus {
   background-color: var(--accent-color);
   fill: var(--text-white-color);
 }
@@ -415,14 +409,6 @@ body {
 .socials__networks_white_fill {
   fill: var(--text-white-color);
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.container__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  text-transform: none;
 }
 
 .clients-list {
@@ -449,8 +435,7 @@ body {
   transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
-.clients-list__links:hover,
-.clients-list__links:focus {
+.clients-list__links:hover, .clients-list__links:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -600,13 +585,6 @@ body {
   display: block;
   margin-right: 0;
   margin-bottom: 20px;
-}
-
-.title__join {
-  display: block;
-  color: var(--text-white-color);
-  margin-bottom: 20px;
-  line-height: 1.17;
 }
 
 .form {

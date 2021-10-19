@@ -1,10 +1,3 @@
-.container__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  text-transform: none;
-}
 .clients-list {
   display: flex;
   flex-wrap: wrap;
@@ -27,9 +20,10 @@
 
   transition: border-color 250ms var(--timing-function),
     fill 250ms var(--timing-function);
-}
-.clients-list__links:hover,
-.clients-list__links:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }

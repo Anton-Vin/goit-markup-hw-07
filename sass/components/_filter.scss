@@ -21,6 +21,7 @@
 
   transition: background-color 250ms var(--timing-function),
     color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
