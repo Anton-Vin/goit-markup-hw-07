@@ -1,20 +1,20 @@
-.form-modal-checkbox {
+.form-modal__checkbox {
   margin-bottom: 30px;
 }
-.check-lable a {
+.form-modal__check-lable .form-modal__agreement {
   text-decoration-line: underline;
   color: var(--accent-color);
   padding-left: 4px;
 }
 
-.check-lable {
+.form-modal__check-lable {
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 1.7;
   cursor: pointer;
 }
-.icon-check {
+.form-modal__icon-check {
   width: 16px;
   height: 15px;
   border: 2px solid var(--text-title-color);
@@ -26,11 +26,13 @@
   fill: transparent;
 }
 
-.checkbox:checked + .check-lable > .icon-check {
+.form-modal__checkbox_cheked:checked
+  + .form-modal__check-lable
+  > .form-modal__icon-check {
   border: none;
   fill: var(--accent-color);
 }
-.modal-btn {
+.modal__btn {
   display: block;
   margin: auto;
 }

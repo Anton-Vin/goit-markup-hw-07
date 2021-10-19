@@ -14,7 +14,7 @@
   transform: translate(-50%, -50%);
   transition: transform 300ms var(--timing-function);
 }
-.btn-closed {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -28,9 +28,9 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   transition: border 300ms var(--timing-function);
-}
-.btn-closed:hover,
-.btn-closed:focus {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+  }
 }

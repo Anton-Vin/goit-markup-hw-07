@@ -768,10 +768,10 @@ img {
   letter-spacing: 0.01em;
   margin-bottom: 4px;
 }
-.form-modal-comment textarea:focus {
+/* .form-modal-comment textarea:focus {
   border-color: var(--accent-color);
   outline: none;
-}
+} */
 
 /* __________CHECKBOX_____________ */
 .form-modal-checkbox {
