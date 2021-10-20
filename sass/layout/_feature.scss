@@ -3,10 +3,11 @@
   line-height: 1.71;
 }
 .feature-list__title {
+  @extend %title;
   margin-bottom: 10px;
-  line-height: 1.14;
+  @include font($fw: 700, $lh: 1.14);
 }
-.ffeature-list__item {
+.feature-list__item {
   width: 270px;
 }
 .feature-list__item:not(:last-child) {

@@ -1,10 +1,9 @@
 .contacts {
-  display: flex;
+  @include dispflex();
   flex-grow: 1;
   justify-content: flex-end;
   .contacts__icon {
     display: inline-block;
-    align-items: center;
     margin-right: 10px;
     fill: var(--text-prime-color);
 
@@ -16,16 +15,13 @@
   }
 }
 .contacts__link {
-  display: inline-flex;
-  align-items: center;
+  @include dispflex($df: inline-flex);
 
   list-style: none;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  line-height: 1.17;
-
+  @include font($fw: 500, $lh: 1.17, $ls: 0.02em);
   color: var(--text-prime-color);
   text-decoration: none;
+
   padding-top: 32px;
   padding-bottom: 32px;
 

@@ -1,21 +1,17 @@
 .header {
   border-bottom: 1px solid #ececec;
   .header__flex {
-    display: flex;
-    align-items: center;
+    @include dispflex();
   }
 }
 .site-nav {
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
+  @include font($fz: 14px, $fw: 500, $lh: 1.17, $ls: 0.02em);
+  @include dispflex();
   .site-nav__link {
     position: relative;
 
     display: block;
     color: var(--text-title-color);
-    font-weight: 500;
-    line-height: 1.17;
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -30,30 +26,8 @@
   }
 }
 .navigation {
-  display: flex;
-  align-items: center;
+  @include dispflex();
 }
-
-// Navigation
-// .site-nav__link {
-//   position: relative;
-
-//   display: block;
-//   color: var(--text-title-color);
-//   font-weight: 500;
-//   line-height: 1.17;
-//   text-decoration: none;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-
-//   transition: color 250ms var(--timing-function);
-//   &:hover,
-//   &:focus,
-//   &:active,
-//   &.current {
-//     color: var(--accent-color);
-//   }
-// }
 
 .site-nav__item:not(:last-child) {
   margin-right: 50px;

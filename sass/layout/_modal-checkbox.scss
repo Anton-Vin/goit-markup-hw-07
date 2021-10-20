@@ -8,9 +8,8 @@
 }
 
 .form-modal__check-lable {
-  display: flex;
+  @include dispflex();
   justify-content: center;
-  align-items: center;
   line-height: 1.7;
   cursor: pointer;
 }
@@ -33,6 +32,7 @@
   fill: var(--accent-color);
 }
 .modal__btn {
+  @extend %button;
   display: block;
   margin: auto;
 }

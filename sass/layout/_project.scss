@@ -33,15 +33,11 @@
 
 .projekt__title {
   margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font($fz: 18px, $fw: 700, $lh: 2, $ls: 0.06em);
   color: var(--text-title-color);
 }
 .projekt__subtitle {
-  font-size: 16px;
-  line-height: 1.88;
+  @include font($fz: 16px, $lh: 1.88);
   color: var(--text-prime-color);
 }
 .projekt__more {
@@ -63,6 +59,7 @@
     height: 100%;
     overflow: hidden;
 
+    @include font($fz: 18px, $lh: 1.55);
     font-size: 18px;
     line-height: 1.55;
     color: var(--text-white-color);

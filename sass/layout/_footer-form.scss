@@ -18,9 +18,7 @@
 
   &::placeholder {
     font-family: inherit;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include font($fz: 16px, $lh: 1.25);
     color: rgba(255, 255, 255, 0.6);
   }
   &:focus {
@@ -29,6 +27,7 @@
 }
 
 .form__btn {
+  @extend %button;
   display: inline-flex;
   align-items: center;
   padding-left: 29px;

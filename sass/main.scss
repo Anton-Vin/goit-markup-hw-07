@@ -1,8 +1,9 @@
 @import './base/reset';
 @import './utils/hidden';
 @import './utils/variables';
-@import './components/title';
+@import './utils/mixins';
 @import './components/btn';
+@import './utils/placeholder';
 @import './components/logo';
 @import './components/container';
 @import './components/section';

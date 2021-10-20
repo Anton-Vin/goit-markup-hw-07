@@ -13,17 +13,15 @@
   position: relative;
 }
 .service-list__overlay {
-  display: flex;
+  @include dispflex();
   position: absolute;
   bottom: 0;
 
   width: 100%;
   height: 70px;
 
-  font-weight: 700;
-  line-height: 1.14;
+  @include font($fw: 700, $lh: 1.14);
   justify-content: center;
-  align-items: center;
   text-transform: uppercase;
   color: var(--text-white-color);
   background-color: rgba(47, 48, 58, 0.8);

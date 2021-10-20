@@ -14,12 +14,10 @@
   padding-bottom: 30px;
 }
 .team-content__name {
-  font-weight: 500;
-  font-size: 16px;
+  @include font($fz: 16px, $fw: 500, $lh: 1.19);
   color: var(--text-title-color);
   text-align: center;
   margin-bottom: 10px;
-  line-height: 1.19;
 }
 .team-content__prof {
   font-size: 16px;

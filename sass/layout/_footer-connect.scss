@@ -3,12 +3,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
   .footer__flex {
-    display: flex;
-    align-items: baseline;
+    @include dispflex($ai: baseline);
   }
 }
 .address {
-  line-height: 1.71;
   font-style: normal;
   .address__item:not(:last-child) {
     color: var(--text-white-color);
@@ -32,11 +30,10 @@
     margin-bottom: 20px;
   }
 }
-// .title__join {
-//   display: block;
-//   color: var(--text-white-color);
-
-//   margin-bottom: 20px;
-
-//   line-height: 1.17;
-// }
+.title__join {
+  @extend %title;
+  display: block;
+  @include font($fw: 700, $lh: 1.17);
+  color: var(--text-white-color);
+  margin-bottom: 20px;
+}
