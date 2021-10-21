@@ -68,6 +68,7 @@ body {
   color: var(--text-prime-color);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -207,13 +208,13 @@ body {
 
 .contacts {
   display: flex;
+  align-items: center;
   flex-grow: 1;
   justify-content: flex-end;
 }
 
 .contacts .contacts__icon {
   display: inline-block;
-  align-items: center;
   margin-right: 10px;
   fill: var(--text-prime-color);
   transition: fill 250ms var(--timing-function);
@@ -322,6 +323,7 @@ body {
 
 .service-list__overlay {
   display: flex;
+  align-items: center;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -331,7 +333,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   justify-content: center;
-  align-items: center;
   text-transform: uppercase;
   color: var(--text-white-color);
   background-color: rgba(47, 48, 58, 0.8);
@@ -446,6 +447,7 @@ body {
 
 .filter {
   display: flex;
+  align-items: center;
   justify-content: center;
   padding-bottom: 50px;
   text-align: center;
@@ -802,8 +804,8 @@ body {
 
 .form-modal__check-lable {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   line-height: 1.7;
   cursor: pointer;
 }
