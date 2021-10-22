@@ -20,7 +20,7 @@
     &:hover,
     &:focus,
     &:active,
-    &.current {
+    &.site-nav__link_current {
       color: var(--accent-color);
     }
   }
@@ -48,7 +48,7 @@
 
   opacity: 0;
 }
-.site-nav__link.current::after {
+.site-nav__link.site-nav__link_current::after {
   opacity: 1;
   width: 100%;
 }

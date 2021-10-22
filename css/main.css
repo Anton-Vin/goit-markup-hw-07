@@ -175,7 +175,7 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.site-nav .site-nav__link:hover, .site-nav .site-nav__link:focus, .site-nav .site-nav__link:active, .site-nav .site-nav__link.current {
+.site-nav .site-nav__link:hover, .site-nav .site-nav__link:focus, .site-nav .site-nav__link:active, .site-nav .site-nav__link.site-nav__link_current {
   color: var(--accent-color);
 }
 
@@ -201,7 +201,7 @@ body {
   opacity: 0;
 }
 
-.site-nav__link.current::after {
+.site-nav__link.site-nav__link_current::after {
   opacity: 1;
   width: 100%;
 }
