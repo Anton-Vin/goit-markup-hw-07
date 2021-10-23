@@ -1,4 +1,4 @@
-.section_bg_grey {
+.section--bg-grey {
   background-color: var(--bg-second-color);
 }
 .team-list {
@@ -9,17 +9,17 @@
 .team-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.team-content {
+.team-list__box {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team-content__name {
+.team-list__title {
   @include font($fz: 16px, $fw: 500, $lh: 1.19);
   color: var(--text-title-color);
   text-align: center;
   margin-bottom: 10px;
 }
-.team-content__prof {
+.team-list__text {
   font-size: 16px;
   color: var(--text-prime-color);
   text-align: center;

@@ -3,12 +3,4 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
-
-  .container__title {
-    @extend %title;
-    margin-bottom: 50px;
-    @include font($fz: 36px, $fw: 700, $lh: 1.17);
-    text-align: center;
-    text-transform: none;
-  }
 }

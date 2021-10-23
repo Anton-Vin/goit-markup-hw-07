@@ -6,7 +6,7 @@
   margin-right: 10px;
 }
 
-.socials__networks {
+.socials__link {
   @include dispflex();
   width: 44px;
   height: 44px;
@@ -25,7 +25,7 @@
   }
 }
 
-.socials__networks_white_fill {
+.socials__link_white_fill {
   fill: var(--text-white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
